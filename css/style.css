@@ -1,0 +1,344 @@
+/******************
+Header
+*******************/
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	color: #6e7d8d;
+	font-weight: 300;
+	
+}
+h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
+
+header {
+	width: 100%;
+	padding: 1.1em 0;
+	background-color: #2d3945;
+	text-align: center;
+}
+
+/******************
+Form
+*******************/
+
+form {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+	min-width: 300px;
+	padding: 0 1.2em;
+}
+
+h2, .intro p {
+	text-align: center;
+}
+
+.intro {
+	padding: 0.7em 0;
+	background: url(../images/double_border.png) left 142px no-repeat;
+	min-height: 160px;
+	margin-bottom: 10px;
+}
+
+.intro p {
+	color: #b8bcbf;
+}
+
+.contact, .newsletter {
+	border: none;
+	padding: 0.8em 0 2em;
+}
+
+.contact label {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.contact {
+	border-bottom: 4px solid #2d3945;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #2d3945;
+}
+
+legend {
+	padding-top: 1em;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #2d3945;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea, 
+select {
+	padding: 10px 20px;
+	width: 100%;
+	height: 60px;
+	background-color: #eff0f1;
+	border:none;
+	border-radius: 5px;
+	font-family: 'Merriweather', serif;
+	color: #b8bdc0;
+}
+
+textarea {
+	height: 120px;
+}
+
+input:focus, textarea:focus, select:focus {
+	border: 2px solid #46698b;
+}
+
+:focus {
+    outline: none;
+}
+
+label.group_label {
+	display: block;
+  line-height: 2em;
+  margin: 1.3em 0 0.9em;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	-webkit-appearance: none;
+	display: none;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	line-height: 20px;
+}
+
+input[type="checkbox"] + label:before {
+	content: "";
+ 	display:inline-block;
+ 	position: absolute;
+ 	left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #cacece;
+}
+
+input[type="checkbox"]:checked + label:before {
+	content: "\2713";
+	background-color: #499ff9;
+  border: 1px solid #499ff9;
+  color: #fff;
+  line-height: 13px;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+input[type="radio"] + label:before {
+	content: "";
+ 	display:inline-block;
+ 	position: absolute;
+ 	left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #cacece;
+}
+
+input[type="radio"]:checked + label:before {
+	content: "\25CF";
+	background-color: #499ff9;
+  border: 1px solid #499ff9;
+  color: #fff;
+  line-height: 12px;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+select::-ms-expand {	
+	display: none; 
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.states {
+	-webkit-appearance: button;
+	appearance: button;
+ 	background-image: url(../images/select_arrow.png);
+ 	background-position: 96% center;
+ 	background-repeat: no-repeat;
+ 	color: #b8bdc0;
+ 	font-size: inherit; 
+ 	overflow: hidden;
+ 	padding: 5px 20px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: right;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #b8bdc0;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  text-align: right;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #b8bdc0;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  text-align: right;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #b8bdc0;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: right;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #b8bdc0;
+}
+
+.selected {
+	text-align: right;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+#zip {
+	width: 50%;
+}
+
+.checkbox, .radio {
+	line-height: 2em;
+	padding-left: 5px;
+}
+
+button {
+	width: 100%;
+	background-color: #4ebbb5;
+	color: #fff;
+	padding: 25px;
+	border-radius: 5px;
+	font-family: 'Merriweather', serif;
+	border: none;
+}
+
+.copyright {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	margin-top: 35px;
+	font-style: italic;
+	color: #b8bcbf;
+}
+
+/******************
+Desktop Styles
+*******************/
+
+@media (min-width: 769px) {
+
+	.intro {
+		padding: 3em 0 0.7em;
+		background: url(../images/double_border.png) left 140px no-repeat;
+	}
+
+	h2, .intro p {
+    line-height: 0.6em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	.intro p {
+		font-size: 0.7em;
+	}
+
+	legend {
+		padding: 1.9em 0 0.8em;
+		font-size: 1em;
+	}
+
+	.form-field {
+		min-height: 70px;
+		margin-bottom: 15px;
+		font-size: 0.8em;
+	}
+
+	.grid-25 {
+		float: left;
+		width: 25%;
+	}
+
+	.grid-75 {
+		float: left;
+		width: 75%;
+	}
+
+	button {
+		padding: 20px;
+		margin-top: 1em;
+	}
+
+	.newsletter {
+		padding: 0.8em 0 1em;
+	}
+
+	.newsletter label, .newsletter p {
+		font-size: 0.8em;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

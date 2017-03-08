@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		
+	</head>
+	<body>
+		<header>
+			<h1>The Code Review</h1>
+		</header>
+		<form>
+
+			<div class="intro">
+				<h2>Signup for our newsletter</h2>
+				<p>Get the latest news on how your code is doing right in your inbox</p>
+			</div>
+
+			<!-- <div class="border1"></div>
+			<div class="border2"></div> -->
+		
+			<fieldset class="contact">
+				<legend>Contact Information</legend>
+
+				<div class="form-field">
+					<div class="grid-25">
+						<label for="name">Full Name</label>
+					</div>
+					<div class="grid-75">
+						<input type="text" id="name" name="user_name" placeholder="Required">
+					</div>
+				</div>
+
+				<div class="form-field">
+					<div class="grid-25">
+						<label for="email">Email Address</label>
+					</div>
+					<div class="grid-75">
+						<input type="email" id="email" name="email" placeholder="Required">
+					</div>
+				</div>
+
+				<div class="form-field">
+					<div class="grid-25">
+						<label for="phone">Phone Number</label>
+					</div>
+					<div class="grid-75">
+						<input type="tel" id="phone" name="phone">
+					</div>
+				</div>
+
+				<div class="form-field">
+					<div class="grid-25">
+						<label for="street">Street Address</label>
+					</div>
+					<div class="grid-75">
+		        <input type="text" id="street" name="street_address">
+		      </div>
+				</div>
+
+		        <div class="form-field">
+							<div class="grid-25">
+		        		<label for="city">City</label>
+		        	</div>
+							<div class="grid-75">
+			        	<input type="text" id="city" name="city">
+			        </div>
+						</div>
+
+		        <div class="form-field">
+							<div class="grid-25">
+		        		<label for="state">State</label>
+		        	</div>
+							<div class="grid-75">
+				        <select  id="state" name="state" class="states">
+				        	<option value="" disabled selected class="selected">Choose State</option>
+				        	<option value="alabama">Alabama</option>
+				        	<option value="alaska">Alaska</option>
+				        	<option value="arizona">Arizona</option>
+				        	<option value="arkansas">Arkansas</option>
+				        	<option value="california">California</option>
+				        	<option value="colorado">Colorado</option>
+				        	<option value="conneticut">Conneticut</option>
+				        	<option value="delaware">Delaware</option>
+				        	<option value="florida">Florida</option>
+				        	<option value="georgia">Georgia</option>
+				        	<option value="hawaii">Hawaii</option>
+				        	<option value="idaho">Idaho</option>
+				        	<option value="illinois">Illinois</option>
+				        	<option value="indiana">Indiana</option>
+				        	<option value="iowa">Iowa</option>
+				        	<option value="kansas">Kansas</option>
+				        	<option value="kentucky">Kentucky</option>
+				        	<option value="louisiana">Louisiana</option>
+				        	<option value="maine">Maine</option>
+				        	<option value="maryland">Maryland</option>
+				        	<option value="massachusetts">Massachusetts</option>
+				        	<option value="missouri">Missouri</option>
+				        	<option value="montana">Montana</option>
+				        	<option value="nebraska">Nebraska</option>
+				        	<option value="nevada">Nevada</option>
+				        	<option value="new hampshire">New Hampshire</option>
+				        	<option value="new jersey">New Jersey</option>
+				        	<option value="new mexico">New Mexico</option>
+				        	<option value="new york">New York</option>
+				        	<option value="north carolina">North Carolina</option>
+				        	<option value="north dakota">North Dakota</option>
+				        	<option value="ohio">Ohio</option>
+				        	<option value="pennsylvania">Pennsylvania</option>
+				        	<option value="rhode island">Rhode Island</option>
+				        	<option value="south carolina">South Carolina</option>
+				        	<option value="south dakota">South Dakota</option>
+				        	<option value="tennessee">Tennessee</option>
+				        	<option value="texas">Texas</option>
+				        	<option value="utah">Utah</option>
+				        	<option value="vermont">Vermont</option>
+				        	<option value="virginia">Virginia</option>
+				        	<option value="washington">Washington</option>
+									<option value="west virginia">West Virginia</option>
+									<option value="wisconsin">Wisconsin</option>
+									<option value="wyoming">Wyoming</option>
+				        </select>
+			        </div>
+						</div>
+
+		        <div class="form-field">
+							<div class="grid-25">
+		        		<label for="zip">Zip Code</label>
+		        	</div>
+							<div class="grid-75">
+			        	<input type="text" id="zip" name="zip_code" maxlength="5">
+			        </div>
+						</div>
+
+	        </fieldset><!-- contact -->
+
+	        <div class="newsletter">
+
+		        <legend>Newsletter</legend>
+		        <label class="group_label">Select the newsletters you would like to receive</label>
+
+		        <input type="checkbox" id="html_news" value="html_news" name="html_news">
+		        <label for="html_news" class="checkbox"><span></span>HTML News</label><br>
+
+		        <input type="checkbox" id="css_news" value="css_news" name="css_news">
+		        <label for="css_news" class="checkbox">CSS News</label><br>
+
+		        <input type="checkbox" id="javascript_news" value="javascript_news" name="javascript_news">
+		        <label for="javascript_news"class="checkbox" >Javascript News</label>
+
+		        <label class="group_label">Newsletter Format</label>
+
+		        <input type="radio" id="html" name="format" value="html_format">
+		        <label for="html" class="radio">HTML</label><br>
+
+		        <input type="radio" id="plain_text" name="format" value="plain_text_format"><label for="plain_text" class="radio">Plain text</label>
+
+		        <label class="group_label">Other topics you'd like to hear about</label>
+
+		        <textarea id="other_topics" name="other_topics"></textarea>
+
+	        </div><!-- newsletter -->
+
+	        <button type="submit">Sign Up</button>
+	        <p class="copyright">Copyright The Code review</p>
+		</form>
+
+	</body>
+</html>
